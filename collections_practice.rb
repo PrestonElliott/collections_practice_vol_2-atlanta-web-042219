@@ -49,9 +49,9 @@ def count_elements(array)
 end
 
 def merge_data(array_one, array_two)
-  array_one[0].map do |name, hash|
+  array_two[0].map do |name, hash|
     new_hash = {}
-    array_two.each do |new_hash_two|
+    array_one.each do |new_hash_two|
       if new_hash_two[:first_name] == name
         new_hash = hash.merge(new_hash_two)
       end
