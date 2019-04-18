@@ -48,6 +48,10 @@ def count_elements(array)
   array.uniq
 end
 
+def merge_data(array_one, array_two)
+  array_one
+end
+
 def find_cool(array)
   new_array = []
   array.each do |element|
